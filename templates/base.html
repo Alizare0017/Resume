@@ -1,0 +1,58 @@
+{% load static %}
+
+{% block content %}
+
+{% endblock %}
+</div>
+<section class="w3l-bootstrap-header">
+  <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'blog:home' %}"> Ali Zare</a>
+      <!-- if logo is image enable this   
+    <a class="navbar-brand" href="#index.html">
+        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fa fa-bars"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'blog:home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'blog:about' %}">About</a>
+          </li>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'blog:contact' %}">Contact</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+</section>
+{% block content_2 %}
+
+{% endblock %}
+
+<section class="w3l-footer-29-main" id="footer">
+  <div class="footer-29 text-center">
+      <div class="container">
+        
+        <div class="main-social-footer-29">
+          <a href="https://twitter.com/dl_tkh?t=4AcY30IGEInJTDm2pyBZHQ&s=08" class="twitter"><img src="{% static 'assets/images/twitter.png' %}" alt="twitter_icon"></a>
+          <a href="https://www.instagram.com/_.ali._0017/" class="instagram"><img src="{% static 'assets/images/instagram.png' %}" alt="instagram_icon"></a>
+          <a href="https://t.me/Dr_maryzz" class="telegram"><img src="{% static 'assets/images/telegram.png' %}" alt="telegram_icon"></a>
+      </div>
+      </div>
+  </div>
+   <!-- move top -->
+  
+	</body>
+
+</html>
