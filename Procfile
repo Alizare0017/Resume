@@ -1,1 +1,1 @@
-django-3.2.12
+web: gunicorn Personal.wsgi --log-file -
